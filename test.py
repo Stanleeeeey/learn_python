@@ -1,14 +1,27 @@
 from exercises import variables
 
-def test(name, excpected_value, tested_code):
+from colorama import Fore, Back, Style
 
+
+
+
+
+suceed = 0
+tested = 0
+
+def test(name, excpected_value, tested_code):
+    global tested, suceed
 
     try:
         tested_code = eval(tested_code)
-        if tested_code ==  excpected_value: print(f" test {name} powiódł się")
-        else: print(f" test {name} nie powiódł się otrzymano wartość {tested_code} a oczekiwano: {excpected_value}")
+        if tested_code ==  eval(excpected_value):
+            print(Fore.GREEN + f" test {name} powiódł się")
+            suceed += 1
+        else: print(Fore.RED + f" test {name} nie powiódł się otrzymano wartość {tested_code} a oczekiwano: {excpected_value}")
     except Exception as e:
-        print(f"test {name} nie powiódł się z powodu {e}")
+        print(Fore.RED + f"test {name} nie powiódł się z powodu {e}")
+
+    tested += 1
 
 
 
@@ -17,14 +30,28 @@ def test(name, excpected_value, tested_code):
 
 test(
     "var1.py",
-    True,
-    "variables.var1.nowa_zmienna == 7"    
+    '7',
+    "variables.var1.nowa_zmienna"    
 )
 
 test(
     "var2.py",
-    True,
+    "True",
     "type(variables.var2.imie) == str and type(variables.var2.wiek) == int "    
 )
 
+test(
+    "var3.py",
+    "'Alex'",
+    "variables.var3.imie"    
+)
 
+test(
+    "var3.py",
+    "variables.var4.skladnik_1 + variables.var4.skladnik_2",
+    "variables.var4.suma"    
+)
+
+
+
+print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
