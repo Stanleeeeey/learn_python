@@ -1,1 +1,1 @@
-from . import var1
+from . import var1, var2
