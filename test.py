@@ -37,7 +37,7 @@ test(
 test(
     "var2.py",
     "True",
-    "type(variables.var2.imie) == str and type(variables.var2.wiek) == int "    
+    "type(variables.var2.imie) == str and type(variables.var2.wiek) == int"    
 )
 
 test(
@@ -47,11 +47,16 @@ test(
 )
 
 test(
-    "var3.py",
+    "var4.py",
     "variables.var4.skladnik_1 + variables.var4.skladnik_2",
     "variables.var4.suma"    
 )
 
-
+test(
+    "var5.py",
+    "'7'",
+    "variables.var5.zmienna1"    
+)
 
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
+
