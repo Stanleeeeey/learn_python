@@ -58,5 +58,11 @@ test(
     "variables.var5.zmienna1"    
 )
 
+
+test(
+    "var6.py",
+    "'hello world'",
+    "variables.var6.hello_world"    
+)
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 
