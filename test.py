@@ -47,22 +47,40 @@ test(
 )
 
 test(
-    "var4.py",
+    "var5.py",
     "variables.var4.skladnik_1 + variables.var4.skladnik_2",
     "variables.var4.suma"    
 )
 
 test(
-    "var5.py",
+    "var4.py",
     "'7'",
     "variables.var5.zmienna1"    
 )
 
-
 test(
     "var6.py",
+    "4//3",
+    "variables.var6.wynik"    
+)
+
+test(
+    "var7.py",
+    "12345678910 % 1234",
+    "variables.var7.reszta"    
+)
+
+test(
+    "var8.py",
+    "3**10",
+    "variables.var8.wynik"    
+)
+
+
+test(
+    "var9.py",
     "'hello world'",
-    "variables.var6.hello_world"    
+    "variables.var9.hello_world"    
 )
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 
