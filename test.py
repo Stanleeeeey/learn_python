@@ -1,4 +1,4 @@
-from exercises import variables
+from exercises import variables, lists
 
 from colorama import Fore, Back, Style
 
@@ -81,6 +81,12 @@ test(
     "var9.py",
     "'hello world'",
     "variables.var9.hello_world"    
+)
+
+test(
+    "list1.py",
+    "42",
+    "lists.list1.lista[0]"    
 )
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 
