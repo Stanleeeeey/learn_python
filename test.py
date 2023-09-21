@@ -17,13 +17,13 @@ def test(name, excpected_value, tested_code):
     try:
         tested_code = eval(tested_code)
         if tested_code ==  eval(excpected_value):
-            print(Fore.GREEN + f" test {name} powiódł się")
+            print(Fore.GREEN + f" test {name} powiodł sie")
             suceed += 1
-        else: print(Fore.RED + f" test {name} nie powiódł się otrzymano wartość {tested_code} a oczekiwano: {excpected_value}")
+        else: print(Fore.RED + f" test {name} nie powiodl się otrzymano wartosc {tested_code} a oczekiwano: {excpected_value}")
     except Exception as e:
-        print(Fore.RED + f"test {name} nie powiódł się z powodu {e}")
+        print(Fore.RED + f"test {name} nie powiodl sie z powodu {e}")
         if not cont:
-            print(Fore.WHITE + "kończymy sprawdzać")
+            print(Fore.WHITE + "konczymy sprawdzac")
             exit(0)
 
     tested += 1
