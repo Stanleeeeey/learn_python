@@ -101,6 +101,12 @@ test(
 )
 
 test(
+    "list3.py",
+    "42",
+    "lists.list3.lista[-1]"    
+)
+
+test(
     "if1.py",
     "False",
     "elseif.if1.czy_podzielna"    
