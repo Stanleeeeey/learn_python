@@ -107,6 +107,12 @@ test(
 )
 
 test(
+    "list4.py",
+    "lists.list4.lista.index(42)",
+    "lists.list4.index"    
+)
+
+test(
     "if1.py",
     "False",
     "elseif.if1.czy_podzielna"    
