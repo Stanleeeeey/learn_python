@@ -1,4 +1,4 @@
-from exercises import variables, lists
+from exercises import variables, lists, elseif
 
 from colorama import Fore, Back, Style
 
@@ -84,21 +84,51 @@ test(
 )
 
 test(
-    "list2.py",
-    "42",
-    "lists.list2.lista[0]"    
-)
-
-test(
-    "list0.py",
-    "False",
-    "lists.list0.czy_podzielna"    
-)
-
-test(
     "list1.py",
+    "42",
+    "lists.list1.lista[0]"    
+)
+
+test(
+    "if1.py",
+    "False",
+    "elseif.if1.czy_podzielna"    
+)
+
+test(
+    "if2.py",
     "True",
-    "sum([1 if lists.list1.czy_parzysta(x) == (x%2 == 0) else 0 for x in range(1000)]) == 1000"    
+    "sum([1 if elseif.if2.czy_parzysta(x) == (x%2 == 0) else 0 for x in range(1000)]) == 1000"    
+)
+
+def if3(x):
+    return x>=16
+
+test(
+    "if3.py",
+    "True",
+    "sum([True if elseif.if3.czy_moze_ogladac_oppenheimera(x) ==if3(x) else False for x in range(100)]) == 100"    
+)
+
+def if4(x): #nie przejmuj się tym
+    miejsce_zamieszkania = None
+    #masz do dyspozycji znak x będący pierwszym znakiem peselu użyj tylko jednego if (ilosc else i elif nie ograniczona)
+    #pisz pod tym
+    
+    if 0 == x:
+        miejsce_zamieszkania = "Nowy Bajt"
+    elif 1 == x: miejsce_zamieszkania = "Baiszawa"
+    elif 2 == x: miejsce_zamieszkania = "wioska"
+    else: miejsce_zamieszkania = "zły pesel"
+    
+
+    #dotąd
+    return miejsce_zamieszkania
+
+test(
+    "if4.py",
+    "True",
+    "sum([True if elseif.if4.sprawdzarka(x) ==if4(x) else False for x in range(10)]) == 10"    
 )
 
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
