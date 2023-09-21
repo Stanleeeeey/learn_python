@@ -1,10 +1,12 @@
 from exercises import variables, lists, elseif
-
+import sys
 from colorama import Fore, Back, Style
 
 
-
-
+try:
+    cont = sys.argv[1] == "cont"
+except:
+    cont = False
 
 suceed = 0
 tested = 0
@@ -20,6 +22,9 @@ def test(name, excpected_value, tested_code):
         else: print(Fore.RED + f" test {name} nie powiódł się otrzymano wartość {tested_code} a oczekiwano: {excpected_value}")
     except Exception as e:
         print(Fore.RED + f"test {name} nie powiódł się z powodu {e}")
+        if not cont:
+            print(Fore.WHITE + "kończymy sprawdzać")
+            exit(0)
 
     tested += 1
 
@@ -87,6 +92,12 @@ test(
     "list1.py",
     "42",
     "lists.list1.lista[0]"    
+)
+
+test(
+    "list2.py",
+    "len(lists.list2.lista)",
+    "lists.list2.dlugosc"    
 )
 
 test(
