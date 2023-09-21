@@ -1,4 +1,4 @@
-from exercises import variables, lists, elseif
+from exercises import variables, lists, elseif, loops
 import sys
 from colorama import Fore, Back, Style
 
@@ -152,6 +152,12 @@ test(
     "if4.py",
     "True",
     "sum([True if elseif.if4.sprawdzarka(x) ==if4(x) else False for x in range(10)]) == 10"    
+)
+
+test(
+    "loop1.py",
+    "sum(loops.loop1.lista)",
+    "loops.loop1.suma"    
 )
 
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
