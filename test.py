@@ -84,9 +84,22 @@ test(
 )
 
 test(
-    "list1.py",
+    "list2.py",
     "42",
-    "lists.list1.lista[0]"    
+    "lists.list2.lista[0]"    
 )
+
+test(
+    "list0.py",
+    "False",
+    "lists.list0.czy_podzielna"    
+)
+
+test(
+    "list1.py",
+    "True",
+    "sum([1 if lists.list1.czy_parzysta(x) == (x%2 == 0) else 0 for x in range(1000)]) == 1000"    
+)
+
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 
