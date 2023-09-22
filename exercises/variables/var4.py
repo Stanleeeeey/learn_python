@@ -1,3 +1,4 @@
-#zmien zmienną zmienna1 na strigna o tej samej wartosci, NIE WPISUJ PO PROSTU zmienna1 = "7"
+#stwórz zmienna suma będącą sumą dwóch składników
 
-zmienna1 = 7 #nie zmienniaj tej linijki
+skladnik_1 = 2
+skladnik_2 = 5
