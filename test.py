@@ -52,13 +52,13 @@ test(
 )
 
 test(
-    "var5.py",
+    "var4.py",
     "variables.var4.skladnik_1 + variables.var4.skladnik_2",
     "variables.var4.suma"    
 )
 
 test(
-    "var4.py",
+    "var5.py",
     "'7'",
     "variables.var5.zmienna1"    
 )
