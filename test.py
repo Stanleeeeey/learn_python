@@ -160,5 +160,11 @@ test(
     "loops.loop1.suma"    
 )
 
+test(
+    "loop2.py",
+    '''["GOSSIP", "SUPERMODEL", "OWN MY MIND", "MAMMAMIA", "LA FINE", "KOOL KIDS", "TIMEZONE", "GASOLINE", "THE LONELIEST", "DON'T WANNA SLEEP"]''',
+    "loops.loop2.piosenki"    
+)
+
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 
