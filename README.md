@@ -3,6 +3,6 @@
 testy na zajecia z pythona w szkole
 
 
-## jak odpalić
+## jak to działa?
 
-odpalacie plik test.py z terminala lub po prostu przyciskiem
+należy uruchomić plik test.py 
