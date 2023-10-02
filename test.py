@@ -178,5 +178,11 @@ test(
     "loops.loop3.wynik"    
 )
 
+test(
+    "loop4.py",
+    '"0123456789"',
+    "loops.loop4.wynik"    
+)
+
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 
