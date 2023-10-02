@@ -1,7 +1,13 @@
 from exercises import variables, lists, elseif, loops
 import sys
-from colorama import Fore, Back, Style
 
+try:
+    from colorama import Fore
+except:
+    class Fore:
+        GREEN = ""
+        RED = ""
+        WHITE = ""
 
 try:
     cont = sys.argv[1] == "cont"
