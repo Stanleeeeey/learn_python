@@ -1,4 +1,4 @@
-from exercises import variables, lists, elseif, loops
+from exercises import variables, lists, elseif, loops, slowniki
 import sys
 
 try:
@@ -192,6 +192,13 @@ test(
     "loop4.py",
     '"0123456789"',
     "loops.loop4.wynik"    
+)
+
+test(
+    "dict1.py",
+    "('Alan', 32)",
+    "(slowniki.dict1.czlowiek['imie'], slowniki.dict1.czlowiek['wiek'])"
+
 )
 
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
