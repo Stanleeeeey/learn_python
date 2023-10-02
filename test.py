@@ -172,5 +172,11 @@ test(
     "loops.loop2.piosenki"    
 )
 
+test(
+    "loop3.py",
+    '"".join(["hej" for i in range(10)])',
+    "loops.loop3.wynik"    
+)
+
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 

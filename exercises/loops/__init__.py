@@ -1,1 +1,1 @@
-from . import loop1, loop2
+from . import loop1, loop2, loop3
