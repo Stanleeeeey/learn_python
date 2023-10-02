@@ -160,6 +160,16 @@ test(
     "sum([True if elseif.if4.sprawdzarka(x) ==if4(x) else False for x in range(10)]) == 10"    
 )
 
+def if5(x):
+    if x %2 == 0 and x%3 == 0: return 6
+    else:return 1
+
+test(
+    "if5.py",
+    "True",
+    "sum([True if elseif.if5.sprawdzarka(x) ==if5(x) else False for x in range(10)]) == 10"    
+)
+
 test(
     "loop1.py",
     "sum(loops.loop1.lista)",
