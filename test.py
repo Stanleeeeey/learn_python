@@ -10,9 +10,9 @@ except:
         WHITE = ""
 
 try:
-    cont = sys.argv[1] == "cont"
+    cont = not (sys.argv[1] == "cont")
 except:
-    cont = False
+    cont = True
 
 suceed = 0
 tested = 0
