@@ -1,1 +1,1 @@
-from . import dict1
+from . import dict1, dict2

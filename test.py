@@ -201,5 +201,12 @@ test(
 
 )
 
+test(
+    "dict2.py",
+    "'Alan'",
+    "slowniki.dict1.czlowiek['imie']"
+
+)
+
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 
