@@ -1,4 +1,4 @@
-from exercises import variables, lists, elseif, loops, slowniki
+from exercises import variables, lists, elseif, loops, slowniki, functions
 import sys
 
 try:
@@ -207,6 +207,14 @@ test(
     "slowniki.dict1.czlowiek['imie']"
 
 )
+
+test(
+    "fun1.py",
+    "1000",
+    "sum([ i+2 == functions.fun1.zwieksz(i) for i in range(1000) ])"
+
+)
+
 
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 
