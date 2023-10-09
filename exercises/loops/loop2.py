@@ -2,13 +2,3 @@
 
 #nie modyfikuj linijki ponizej i tak to nie jest caly album
 piosenki = ["gossip", "supermodel", "own my mind", "mammamia", "la fine", "kool kids", "timezone", "gasoline", "the loneliest", "don't wanna sleep"]
-piosenki2 = []
-for piosenka in piosenki:
-    piosenki2.append(piosenka.upper())
-
-piosenki = piosenki2
-
-
-for i in range(len(piosenki)):
-    piosenki[i] = piosenki[i].upper()
-
