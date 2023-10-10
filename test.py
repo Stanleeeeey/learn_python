@@ -268,5 +268,20 @@ test(
 )
 
 
+def factorial(x):
+    res = 1
+    for i in range(1, x+1):
+        res*= i
+    return res
+
+test(
+    "fun6.py",
+    "100",
+    "sum([factorial(i) == functions.fun6.silnia(i) for i in range(100)])"
+
+)
+
+
+
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 

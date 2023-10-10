@@ -1,0 +1,1 @@
+#napsiz funckje silnia bez rekurencji o nazwie silnia
