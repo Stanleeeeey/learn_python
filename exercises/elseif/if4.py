@@ -4,7 +4,7 @@
 # 1 oznacza miasto "Baiszawa"
 # 2 oznacza małe wioski
 # ale ale, ostatnio grupa przęstepcza z wrogiej Bitocji fałszuję pesele dając na inne cyfry
-# twoim bojowym zadaniem jest napisać program sprawdzający pesele dla mi nisterstwa obronny
+# twoim bojowym zadaniem jest napisać program sprawdzający pesele dla ministerstwa obronny
 # twój program ma w zmiennej miejsce_zamieszkania zapisać miasto zamieszkania, "wioska" jeśli ktoś żyje w małej wiosce
 # lub "zły pesel" jeśli zaczyna się od literki
 
