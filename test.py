@@ -1,5 +1,6 @@
 from exercises import variables, lists, elseif, loops, slowniki, functions
 import sys
+import random
 
 try:
     from colorama import Fore
@@ -289,7 +290,43 @@ test(
 )
 
 
+commands = [
+    "",
+    "heal",
+    "hit",
+    "safe"
+]
 
+def npcControll(command, npc):
+    if command == "":
+        if npc["position"][0] > 100:
+
+            npc["position"][0] -= npc["speed"]
+        else:
+            npc["position"][0] += npc["speed"]
+    elif command == "heal":
+        npc["health"] = min(100, npc["health"])
+    elif command == "hit":
+        npc["speed"] *= 2
+        npc["health"] -= 10
+        npc["position"][1] += npc["speed"]
+    elif command == "safe":
+        npc["speed"] /= 2
+    
+def generateNPC():
+    return {
+        "name": "grzegorz",
+        "health": random.randint(1,100),
+        "speed": 2*random.randint(1,10),
+        "position": [random.randint(1,100), random.randint(1,100)]
+    }
+
+test(
+    "fun8.py",
+    "100",
+    "sum([npcControll(*i) == functions.fun8.AI(*i) for i in [(random.choice(commands), generateNPC()) for j in range(100)]])"
+
+)
 
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 
