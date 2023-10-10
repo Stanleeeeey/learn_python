@@ -281,6 +281,14 @@ test(
 
 )
 
+test(
+    "fun7.py",
+    "100",
+    "sum([factorial(i) == functions.fun7.silnia(i) for i in range(100)])"
+
+)
+
+
 
 
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")

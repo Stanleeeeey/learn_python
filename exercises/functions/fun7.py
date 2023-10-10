@@ -1,0 +1,1 @@
+#napsiz funckje silnia z rekurencjią o nazwie silnia
