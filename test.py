@@ -216,5 +216,17 @@ test(
 )
 
 
+def zwieksz(x, y = 2):
+    return x+y
+
+
+test(
+    "fun2.py",
+    "(10000, 1000)",
+    "(sum([sum([zwieksz(x, y) == functions.fun2.zwieksz(x, y) for x in range(100) ]) for y in range(100)]), sum([ i+2 == functions.fun2.zwieksz(i) for i in range(1000) ]))"
+
+)
+
+
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 
