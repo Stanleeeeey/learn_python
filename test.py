@@ -252,6 +252,20 @@ test(
 
 )
 
+def dot(x,y):
+    suma = 0
+    for i in range(len(x)):
+        suma += x[i] *y[i]
+
+    return suma
+
+
+test(
+    "fun5.py",
+    "dot([31,20,16], [42,51,6689])",
+    "functions.fun5.dot([31,20,16], [42,51,6689])"
+
+)
 
 
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
