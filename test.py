@@ -227,6 +227,24 @@ test(
 
 )
 
+def fib1(x):
+    previous = 1
+    current = 1
+    nexti = 0
+    for i in range(x-2):
+        nexti = current + previous
+        previous = current
+        current = nexti
+
+    return current
+
+test(
+    "fun3.py",
+    "100",
+    "sum([ fib1(i) == functions.fun3.fibonaci(i) for i in range(100) ])"
+
+)
+
 
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 

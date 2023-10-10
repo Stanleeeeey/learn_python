@@ -1,1 +1,1 @@
-from . import fun1, fun2
+from . import fun1, fun2, fun3
