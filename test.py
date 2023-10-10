@@ -245,6 +245,14 @@ test(
 
 )
 
+test(
+    "fun4.py",
+    "100",
+    "sum([ fib1(i) == functions.fun4.fibonaci(i) for i in range(100) ])"
+
+)
+
+
 
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 
