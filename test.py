@@ -205,7 +205,7 @@ test(
 test(
     "dict2.py",
     "'Alan'",
-    "slowniki.dict1.czlowiek['imie']"
+    "slowniki.dict2.czlowiek['imie']"
 
 )
 
