@@ -13,3 +13,6 @@ https://cke.gov.pl/images/_EGZAMIN_MATURALNY_OD_2015/Arkusze_egzaminacyjne/2023/
 
 zad 4.
 https://cke.gov.pl/images/_EGZAMIN_MATURALNY_OD_2015/Arkusze_egzaminacyjne/2010/Informatyka/pr_ii.pdf
+
+zad 6.
+https://cke.gov.pl/images/_EGZAMIN_MATURALNY_OD_2015/Arkusze_egzaminacyjne/2018/formula_do_2014/informatyka/MIN-R2_1P-182.pdf
