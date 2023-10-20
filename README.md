@@ -9,7 +9,7 @@ należy uruchomić plik test.py
 
 ## zadania maturalne
 zad 4.
-https://cke.gov.pl/images/_EGZAMIN_MATURALNY_OD_2015/Arkusze_egzaminacyjne/2023/Informatyka/EINP-R2-100-2305.pdf 
+https://cke.gov.pl/egzamin-maturalny/egzamin-maturalny-w-formule-2015/arkusze/2023-2/
 
 zad 4.
 https://cke.gov.pl/images/_EGZAMIN_MATURALNY_OD_2015/Arkusze_egzaminacyjne/2010/Informatyka/pr_ii.pdf
