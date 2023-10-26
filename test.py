@@ -391,10 +391,54 @@ def check_class4():
     
     return human.name, human.age, human.gatunek
 
+class Position:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+
+class NPC:
+    def __init__(self, pozycja, profesja, zdrowie):
+        self.pozycja = pozycja
+        self.profesja = profesja
+        self.zdrowie = zdrowie
+
+    def update(self, IsHit, IsSafe, Move):
+        if IsHit:
+            self.zdrowie -= 20
+        if IsSafe:
+            self.zdrowie +=10
+
+        self.pozycja.x += Move.x
+        self.pozycja.y += Move.y
+
+
+def class7():
+    c = 0
+    for i in range(100):
+        pozycja = Position(random.randint(1, 100), random.randint(1, 100))
+        zdrowie = random.randint(1, 100)
+        profesja = ""
+        
+        x = NPC(pozycja, profesja, zdrowie)
+        y = classes.class7.NPC(pozycja, profesja, zdrowie)
+
+        move = Position(random.randint(1, 100), random.randint(1, 100))
+        IsHit = True
+        IsSafe = True
+
+        x.update(IsHit, IsSafe, move)
+        y.update(IsHit, IsSafe, move)
+
+        if x.pozycja.x == y.pozycja.x and x.pozycja.y == y.pozycja.y and x.zdrowie == y.zdrowie:
+            c+=1
+
+        
+    return 100 == c
 test(
-    "class4.py",
-    "('Max', 20, 'european')",
-    '''check_class4()'''
+    "class7.py",
+    "True",
+    '''class7()'''
 
 )
 
