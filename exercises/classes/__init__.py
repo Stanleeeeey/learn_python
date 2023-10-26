@@ -1,1 +1,1 @@
-from . import class1, class2
+from . import class1, class2, class3

@@ -347,5 +347,17 @@ test(
 
 )
 
+
+def check_class3():
+    human = classes.class3.Czlowiek()
+    human.inicjalizuj("Max", 20)
+    return human.imie, human.wiek
+
+test(
+    "class3.py",
+    "('Max', 20)",
+    '''check_class3()'''
+
+)
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 
