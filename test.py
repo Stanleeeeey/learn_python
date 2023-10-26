@@ -385,5 +385,18 @@ test(
     '''check_class5()'''
 
 )
+
+def check_class4():
+    human = classes.class6.Jaskolka("Max", 20, 'european')
+    
+    return human.name, human.age, human.gatunek
+
+test(
+    "class4.py",
+    "('Max', 20, 'european')",
+    '''check_class4()'''
+
+)
+
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 
