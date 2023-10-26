@@ -371,5 +371,19 @@ test(
     '''check_class4()'''
 
 )
+
+
+def check_class5():
+    cat = classes.class5.Cat("Max", 20)
+    
+    return cat.make_noise()
+
+
+test(
+    "class5.py",
+    "'miau'",
+    '''check_class5()'''
+
+)
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 
