@@ -1,4 +1,4 @@
-from exercises import variables, lists, elseif, loops, slowniki, functions
+from exercises import variables, lists, elseif, loops, slowniki, functions, classes
 import sys
 import random
 
@@ -325,6 +325,13 @@ test(
     "fun8.py",
     "100",
     "sum([npcControll(*i) == functions.fun8.AI(*i) for i in [(random.choice(commands), generateNPC()) for j in range(100)]])"
+
+)
+
+test(
+    "class1.py",
+    "'Max'",
+    "classes.class1.Czlowiek().imie"
 
 )
 
