@@ -335,5 +335,17 @@ test(
 
 )
 
+def check_class2():
+    human = classes.class2.Czlowiek()
+    human.zmien_wiek(20)
+    return human.wiek
+
+test(
+    "class2.py",
+    "20",
+    '''check_class2()'''
+
+)
+
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 
