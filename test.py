@@ -1,4 +1,4 @@
-from exercises import variables, lists, elseif, loops, slowniki, functions, classes
+from exercises import variables, lists, elseif, loops, slowniki, functions, classes, list_comprehension
 import sys
 import random
 
@@ -386,10 +386,19 @@ test(
 
 )
 
-def check_class4():
+
+
+def check_class6():
     human = classes.class6.Jaskolka("Max", 20, 'european')
     
     return human.name, human.age, human.gatunek
+
+test(
+    "class6.py",
+    "True",
+    '''class6()'''
+
+)
 
 class Position:
     def __init__(self, x, y):
@@ -439,6 +448,13 @@ test(
     "class7.py",
     "True",
     '''class7()'''
+
+)
+
+test(
+    "list1.py",
+    "True",
+    '''list_comprehension.list1.lista == [i for i in range(0, 100, 2)]'''
 
 )
 
