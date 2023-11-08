@@ -480,5 +480,13 @@ test(
 
 )
 
+test(
+    "lambda1.py",
+    "True",
+    '''[lambdas.lambda2.lista(i) == [x for x in range(i)] for i in range(100)] == [True for i in range(100)]'''
+
+)
+
+
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 
