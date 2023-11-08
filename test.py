@@ -458,5 +458,14 @@ test(
 
 )
 
+
+test(
+    "list1.py",
+    "True",
+    '''list_comprehension.list2.lista == [i**2 for i in range(1, 101)]'''
+
+)
+
+
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
 

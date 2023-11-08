@@ -1,1 +1,1 @@
-from . import list1
+from . import list1, list2
