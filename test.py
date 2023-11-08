@@ -1,4 +1,4 @@
-from exercises import variables, lists, elseif, loops, slowniki, functions, classes, list_comprehension
+from exercises import variables, lists, elseif, loops, slowniki, functions, classes, list_comprehension, lambdas
 import sys
 import random
 
@@ -460,16 +460,23 @@ test(
 
 
 test(
-    "list1.py",
+    "list2.py",
     "True",
     '''list_comprehension.list2.lista == [i**2 for i in range(1, 101)]'''
 
 )
 
 test(
-    "list1.py",
+    "list3.py",
     "True",
     '''list_comprehension.list3.lista == [i**2 for i in list_comprehension.list3.liczby]'''
+
+)
+
+test(
+    "lambda1.py",
+    "True",
+    '''[lambdas.lambda1.zwieksz_o_jeden(i) for i in range(100)] == [i+1 for i in range(100)]'''
 
 )
 
