@@ -481,11 +481,29 @@ test(
 )
 
 test(
-    "lambda1.py",
+    "lambda2.py",
     "True",
     '''[lambdas.lambda2.lista(i) == [x for x in range(i)] for i in range(100)] == [True for i in range(100)]'''
 
 )
+
+test(
+    "lambda3.py",
+    "True",
+    '''[lambdas.lambda3.zkwadratuj([x for x in range(i)]) == [x**2 for x in range(i)] for i in range(100)] == [True for i in range(100)]'''
+
+)
+
+x = lambda x : x*(x-1)
+
+
+test(
+    "lambda4.py",
+    "True",
+    '''[lambdas.lambda4.apply_on_list(x, [x for x in range(i)]) == [x(j) for j in range(i)] for i in range(100)] == [True for i in range(100)]'''
+
+)
+
 
 
 print(Fore.WHITE + f"przeprowadzono {tested} testów z procentem udanych {suceed / tested *100}%")
