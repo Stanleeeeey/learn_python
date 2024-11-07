@@ -96,6 +96,12 @@ test(
 )
 
 test(
+    "var10.py",
+    "'degrengolada'*10",
+    "variables.var10.zmienna"
+)
+
+test(
     "list1.py",
     "42",
     "lists.list1.lista[0]"    
