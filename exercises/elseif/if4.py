@@ -10,9 +10,9 @@
 
 def sprawdzarka(x): #nie przejmuj się tym
     miejsce_zamieszkania = None
-    #masz do dyspozycji znak x będący pierwszym znakiem peselu użyj tylko jednego if (ilosc else i elif nie ograniczona)
-    #pisz pod tym
+    #masz do dyspozycji zmienną x będący pierwszym znakiem peselu użyj tylko jednego if (ilosc else i elif nie ograniczona)
+    #miejsce na twój kod
     
 
-    #dotąd
+    #koniec miejsca
     return miejsce_zamieszkania

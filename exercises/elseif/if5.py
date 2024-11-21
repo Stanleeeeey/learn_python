@@ -2,7 +2,7 @@
 
 
 def sprawdzarka(x): #nie przejmuj się tym
-    #zmien zmienna wynik zgodnie z trescia zadania
+    #zmien zmienną wynik zgodnie z trescia zadania
     wynik = 0
 
 

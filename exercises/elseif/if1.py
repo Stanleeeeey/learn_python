@@ -1,4 +1,4 @@
-# jesli liczba x jest podzielna przez 1234 zmien wartosc czy_podzielna na prawde
+# jesli liczba x jest podzielna przez 1234 zmień wartość czy_podzielna na prawdę
 
 x = 2149817298048
 

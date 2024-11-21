@@ -1,4 +1,4 @@
-# jako fan albumu RUSH zespołu maneskin nie mozesz patrzec jak ktos zapisal do listy nazwy piosenek malymi literami (oryginalnie nazwy pisoenek z tego albumu sa pisane tylko z uzyciem duzych liter) napraw to, wynik zapisz w takiej kolejnosci w zmiennej piosenki!!
+# jako fan albumu RUSH zespołu maneskin nie możesz patrzeć jak ktos zapisał do listy nazwy piosenek małymi literami (oryginalnie nazwy pisoenek z tego albumu sa pisane tylko z użyciem dużych liter) napraw to, wynik zapisz w takiej kolejności w zmiennej piosenki!!
 
-#nie modyfikuj linijki ponizej i tak to nie jest caly album
+#nie modyfikuj linijki poniżej i tak to nie jest caly album
 piosenki = ["gossip", "supermodel", "own my mind", "mammamia", "la fine", "kool kids", "timezone", "gasoline", "the loneliest", "don't wanna sleep"]

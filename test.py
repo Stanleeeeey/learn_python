@@ -102,30 +102,6 @@ test(
 )
 
 test(
-    "list1.py",
-    "42",
-    "lists.list1.lista[0]"    
-)
-
-test(
-    "list2.py",
-    "len(lists.list2.lista)",
-    "lists.list2.dlugosc"    
-)
-
-test(
-    "list3.py",
-    "42",
-    "lists.list3.lista[-1]"    
-)
-
-test(
-    "list4.py",
-    "lists.list4.lista.index(42)",
-    "lists.list4.index"    
-)
-
-test(
     "if1.py",
     "False",
     "elseif.if1.czy_podzielna"    
@@ -177,6 +153,32 @@ test(
     "sum([True if elseif.if5.sprawdzarka(x) ==if5(x) else False for x in range(10)]) == 10"    
 )
 
+
+test(
+    "list1.py",
+    "42",
+    "lists.list1.lista[0]"    
+)
+
+test(
+    "list2.py",
+    "len(lists.list2.lista)",
+    "lists.list2.dlugosc"    
+)
+
+test(
+    "list3.py",
+    "42",
+    "lists.list3.lista[-1]"    
+)
+
+test(
+    "list4.py",
+    "lists.list4.lista.index(42)",
+    "lists.list4.index"    
+)
+
+
 test(
     "loop1.py",
     "sum(loops.loop1.lista)",
@@ -191,7 +193,7 @@ test(
 
 test(
     "loop3.py",
-    '"".join(["hej" for i in range(10)])',
+    '"".join([f"hej{i+1}" for i in range(10)])',
     "loops.loop3.wynik"    
 )
 
@@ -199,6 +201,12 @@ test(
     "loop4.py",
     '"0123456789"',
     "loops.loop4.wynik"    
+)
+
+test(
+    "loop5.py",
+    'True',
+    "sum([sum([True if loops.loop5.pow(x,y) == x**y else False for y in range(10)]) for x in range(10)]) == 100"    
 )
 
 test(

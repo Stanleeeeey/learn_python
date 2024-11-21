@@ -2,13 +2,12 @@
 
 
 def czy_moze_ogladac_oppenheimera(x): #nie przejmuj się tym
-    #masz do dyspozycji zmienna x ma ona wartosc liczbowa sprawdz czy uzytkownik ma co najmniej 16 lat
+    #masz do dyspozycji zmienną x ma ona wartosc liczbowa sprawdz czy uzytkownik ma co najmniej 16 lat
     czy_moze = None # zwróć uwage będziesz musiał też zmienić wartość na False
-    #pisz odtąd
+    #miejsce na twój kod
 
-    #dotąd
-    
 
+    #koniec miejsca
     return czy_moze
 
 
