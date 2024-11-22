@@ -6,7 +6,7 @@
 # ale ale, ostatnio grupa przęstepcza z wrogiej Bitocji fałszuję pesele dając na inne cyfry
 # twoim bojowym zadaniem jest napisać program sprawdzający pesele dla ministerstwa obronny
 # twój program ma w zmiennej miejsce_zamieszkania zapisać miasto zamieszkania, "wioska" jeśli ktoś żyje w małej wiosce
-# lub "zły pesel" jeśli zaczyna się od literki
+# lub "zły pesel" jeśli zaczyna się od cyferki
 
 def sprawdzarka(x): #nie przejmuj się tym
     miejsce_zamieszkania = None
