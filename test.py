@@ -210,6 +210,30 @@ test(
 )
 
 test(
+    "loop6.py",
+    "sum([i for i in range(100)])",
+    "loops.loop6.suma"
+)
+
+def silnia(x):
+    a = 1
+    for i in range(1, x+1):
+        a*=i
+    return a
+
+test(
+    "loop7.py",
+    "silnia(7)",
+    "loops.loop7.wynik"
+)
+
+test(
+    "loop8.py",
+    "['Ala', 'ma', 'kota.']",
+    "loops.loop8.wynik"
+)
+
+test(
     "dict1.py",
     "('Alan', 32)",
     "(slowniki.dict1.czlowiek['imie'], slowniki.dict1.czlowiek['wiek'])"
