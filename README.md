@@ -1,11 +1,20 @@
 # learn_python
 
-testy na zajecia z pythona w szkole
+testy na zajęcia z pythona w Alo PWr
 
-
-## jak to działa?
+# Uruchamianie
 
 należy uruchomić plik test.py 
+
+`python test.py`
+
+testy spradzawdzą każde zadanie i podadzą procentowy wynik
+
+**Zadania mogą zawierać literówki i podobne błędy, w przypadku znalezienie proszę o otworzenie problemu na githubie**
+
+# Dodatkowe materiały
+
+materiały dodatkowe dla uczniów kursu. 
 
 ## zadania maturalne
 zad 4.
